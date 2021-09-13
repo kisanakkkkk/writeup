@@ -32,15 +32,15 @@ file problem: https://github.com/kisanakkkkk/writeup/blob/main/compfest%202021/Y
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Cipher1 = [encrypt(Plain1, key, IV) di mana IV = default IV</p>
+<p>Cipher1 = [encrypt(Plain1, key, IV) where IV = default IV</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Cipher2 = [encrypt(Plain2, key, IV1) di mana IV1 = Plain1 <strong>⊕</strong> Cipher1</p>
+<p>Cipher2 = [encrypt(Plain2, key, IV1) where IV1 = Plain1 <strong>⊕</strong> Cipher1</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Cipher3 = [encrypt(Plain3, key, IV2) di mana IV2 = Plain2 <strong>⊕</strong> Cipher2</p>
+<p>Cipher3 = [encrypt(Plain3, key, IV2) where IV2 = Plain2 <strong>⊕</strong> Cipher2</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
