@@ -9,7 +9,7 @@ _nc 103.152.242.242 10016_
 
 _Author: prajnapras19_
 
-file problem: https://github.com/kisanakkkkk/writeup/blob/main/compfest%202021/You%20AES%20Me%20Up/chall.py
+chall file: https://github.com/kisanakkkkk/writeup/blob/main/compfest%202021/You%20AES%20Me%20Up/chall.py
 
 
 **Summary**
