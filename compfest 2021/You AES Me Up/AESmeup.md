@@ -209,7 +209,7 @@ if __name__ == "__main__":
 <!-- wp:paragraph -->
 <p><strong>Full code:</strong></p>
 <!-- /wp:paragraph -->
-https://github.com/kisanakkkkk/writeup/blob/main/compfest%202021/You%20AES%20Me%20Up/solve.py
+https://github.com/kisanakkkkk/writeup/blob/main/compfest%202021/You%20AES%20Me%20Up/rapi.py
 
 <p><strong>Output:</strong></p>
 
