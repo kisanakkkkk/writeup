@@ -11,6 +11,13 @@ _Author: prajnapras19_
 
 chall file: https://github.com/kisanakkkkk/writeup/blob/main/compfest%202021/You%20AES%20Me%20Up/chall.py
 
+TL;DR
+
+Solution:
+1. get the default IV (details below)
+2. get the CBC plaintext by: (use decryption feature to decrypt given ciphertext) ⊕ default IV ⊕ new IV (obtained from cipherblock ⊕ plainblock)
+3. decrypt the plaintext ECB method with default IV as key
+4. profit
 
 **Summary**
 
