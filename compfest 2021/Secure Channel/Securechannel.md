@@ -44,6 +44,14 @@ _Description:_
 <p><strong>talk-with-bob.py: </strong>https://github.com/kisanakkkkk/writeup/blob/main/compfest%202021/Secure%20Channel/talk-with-bob.py</p>
 <!-- /wp:paragraph -->
 
+TL;DR
+Solution:
+
+1. find bob's secret by brute force & compare our custom secret
+2. get bob's key from make_private_part(bobsecret, alicepub, p)
+3. create unpad function which remove unprintable string
+4. decrypt each messages from the convo, decode with ascii85
+5. profit
 
 <!-- wp:paragraph -->
 <p><strong>Summary</strong></p>
