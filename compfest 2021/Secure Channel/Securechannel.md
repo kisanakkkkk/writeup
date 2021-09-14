@@ -49,7 +49,7 @@ TL;DR
 Solution:
 
 1. find bob's secret by brute force & compare our custom secret
-2. get bob's key from make_private_part(bobsecret, alicepub, p)
+2. get bob's key by doing function make_private_part(bobsecret, alicepublic, p)
 3. create unpad function which remove unprintable string
 4. decrypt each messages from the convo, unpad, decode with ascii85
 5. profit
