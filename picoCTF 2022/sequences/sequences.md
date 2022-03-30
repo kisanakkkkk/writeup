@@ -9,7 +9,7 @@
 
 Hint #1 : Google "matrix diagonalization". Can you figure out how to apply it to this function?</pre>
 <!-- /wp:preformatted -->
-
+chall file: https://github.com/kisanakkkkk/writeup/blob/main/picoCTF%202022/sequences/sequences.py
 <p><strong>TL;DR</strong>
     
 Optimize fibonacci-like code with matrix diagonalization method</p>
@@ -254,7 +254,7 @@ if __name__=="__main__":
     decrypt_flag(sol)
 </code></pre>
 <!-- /wp:code -->
-
+solve file: https://github.com/kisanakkkkk/writeup/blob/main/picoCTF%202022/sequences/solve.py
 <!-- wp:paragraph -->
 <p>output:</p>
 <!-- /wp:paragraph -->
