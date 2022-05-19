@@ -199,8 +199,6 @@ r.recvuntil('>')
 r.sendline('cat secret.txt')
 encrypted = r.recvline().strip().decode()
 print(decrypt(encrypted))
-
-#b'\nIn case Jenny malfunctions say the following phrase: Melt My Eyez, See Your Future  \nThe AI system will shutdown and you will gain complete control of the spaceship.\n- Danbeer S.A.\nHTB{b451c_b10ck_c1ph3r_15_w34k!!!}\n\x07\x07\x07\x07\x07\x07\x07'
 </code></pre>
 <!-- /wp:code -->
 solve file: https://github.com/kisanakkkkk/writeup/blob/main/Cyber%20Apocalypse%20CTF%202022/Jenny%20From%20The%20Block/solve.py
