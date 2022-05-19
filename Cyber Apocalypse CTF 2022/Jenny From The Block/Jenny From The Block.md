@@ -6,7 +6,7 @@
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted"></pre>
 <!-- /wp:preformatted -->
-chall file: https://github.com/kisanakkkkk/writeup/blob/main/Cyber%20Apocalypse%20CTF%202022/Android-in-the-Middle/source.py
+chall file: https://github.com/kisanakkkkk/writeup/blob/main/Cyber%20Apocalypse%20CTF%202022/Jenny%20From%20The%20Block/chall.py
 <p><strong>TL;DR</strong>
 
 - known plaintext based attack
@@ -161,7 +161,7 @@ def decrypt_block(enc_block, secret):
 
 <p>That way, we set an initial key for decrypt which consists of sha256 of encrypted_block[0] plus 'Command executed: cat secret.txt' to get original_block[1]. Then encrypted_block[1] + ori_block[1] is used as the key to get original_block[2], and so on.</p>
 
-
+<p>construct all the concept above, and here's the python script i made:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code>
 from pwn import *
@@ -203,7 +203,7 @@ print(decrypt(encrypted))
 #b'\nIn case Jenny malfunctions say the following phrase: Melt My Eyez, See Your Future  \nThe AI system will shutdown and you will gain complete control of the spaceship.\n- Danbeer S.A.\nHTB{b451c_b10ck_c1ph3r_15_w34k!!!}\n\x07\x07\x07\x07\x07\x07\x07'
 </code></pre>
 <!-- /wp:code -->
-solve file: https://github.com/kisanakkkkk/writeup/blob/main/Cyber%20Apocalypse%20CTF%202022/Android-in-the-Middle/solve.py
+solve file: https://github.com/kisanakkkkk/writeup/blob/main/Cyber%20Apocalypse%20CTF%202022/Jenny%20From%20The%20Block/solve.py
 <!-- wp:paragraph -->
 <p>output:</p>
 <!-- /wp:paragraph -->
