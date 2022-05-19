@@ -7,7 +7,7 @@
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">Years have passed since Miyuki rescued you from the graveyard. When Virgil tells you that he needs your help with something he found there, desperate thoughts about your father and the disabilities you developed due to the disposal process come to mind. The device looks like an advanced GPS with AI capabilities. Riddled with questions about the past, you are pessimistic that you could be of any value. After hours of fiddling and observing the power traces of this strange device, you and Virgil manage to connect to the debugging interface and write an interpreter to control the signals. The protocol looks familiar to you. Your father always talked about implementing this scheme in devices for security reasons. Could it have been him?</pre>
 <!-- /wp:preformatted -->
-chall file: https://github.com/kisanakkkkk/writeup/blob/main/picoCTF%202022/sequences/sequences.py
+chall file: https://github.com/kisanakkkkk/writeup/blob/main/Cyber%20Apocalypse%20CTF%202022/Android-in-the-Middle/source.py
 <p><strong>TL;DR</strong>
     
 Diffie Helman using 0 to create shared secret with value 1</p>
@@ -178,7 +178,7 @@ r.sendline(binascii.hexlify(encrypt(b"Initialization Sequence - Code 0", 0)))
 r.interactive()
 </code></pre>
 <!-- /wp:code -->
-solve file: https://github.com/kisanakkkkk/writeup/blob/main/picoCTF%202022/sequences/solve.py
+solve file: https://github.com/kisanakkkkk/writeup/blob/main/Cyber%20Apocalypse%20CTF%202022/Android-in-the-Middle/solve.py
 <!-- wp:paragraph -->
 <p>output:</p>
 <!-- /wp:paragraph -->
