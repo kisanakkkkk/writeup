@@ -162,8 +162,8 @@ def decrypt_block(enc_block, secret):
 <p>That way, we set an initial key for decrypt which consists of sha256 of encrypted_block[0] plus 'Command executed: cat secret.txt' to get original_block[1]. Then encrypted_block[1] + ori_block[1] is used as the key to get original_block[2], and so on.</p>
 
 <p>construct all the concept above, and here's the python script i made:</p>
-<!-- wp:code -->
-<pre class="wp-block-code"><code>
+
+<pre><code>
 from pwn import *
 from hashlib import sha256
 from Crypto.Util.Padding import pad, unpad
@@ -202,6 +202,7 @@ print(decrypt(encrypted))
 </code></pre>
 <!-- /wp:code -->
 solve file: https://github.com/kisanakkkkk/writeup/blob/main/Cyber%20Apocalypse%20CTF%202022/Jenny%20From%20The%20Block/solve.py
+
 <!-- wp:paragraph -->
 <p>output:</p>
 <!-- /wp:paragraph -->
