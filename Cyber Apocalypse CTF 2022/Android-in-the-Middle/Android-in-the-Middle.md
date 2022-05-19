@@ -10,7 +10,7 @@
 chall file: https://github.com/kisanakkkkk/writeup/blob/main/Cyber%20Apocalypse%20CTF%202022/Android-in-the-Middle/source.py
 <p><strong>TL;DR</strong>
     
-Diffie Helman using 0 to create shared secret with value 1</p>
+Diffie Helman using 0 to create shared secret with value 0</p>
 
 
 <!-- wp:heading -->
