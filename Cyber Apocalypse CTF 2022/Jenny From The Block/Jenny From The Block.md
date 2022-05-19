@@ -154,7 +154,7 @@ def decrypt_block(enc_block, secret):
 </code></pre>
 
 
-<p>To create a decrypt function, the incoming ciphertext must be converted into bytes first. Like encryption, the ciphertext bytes are also divided into 32-byte block arrays. Now it's just a matter of keys. The initial key used when encrypting is 32 bytes which is randomly generated, and bruteforce is not the way to get it because it will take too long. But, <strong>do we really have to get that random key?</strong></p>
+<p>To create a decrypt function, the incoming ciphertext must be converted into bytes first. Like encryption, the ciphertext bytes are also divided into 32-byte block arrays. Now it's just a matter of keys. The initial key used when encrypting is 32 bytes which is randomly generated, and we also can get the key by reversing the known ori_block with encrypted_block. But, <strong>do we really have to get that random key?</strong></p>
 
 <p>The part we can exploit is the key after the first round of encryption, which consists of encrypted_block + ori_block of that round. The encrypted block are from the ciphertext that is given, while to get the ori_block we have to decrypt the encrypted block to construct the next key. apparently, we can find out the original block of the first round by using a command, that is <em>'Command executed: cat secret.txt'</em> which has a length of 32 bytes.
 </p>
