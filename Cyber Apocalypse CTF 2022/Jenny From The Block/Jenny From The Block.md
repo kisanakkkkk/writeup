@@ -4,7 +4,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:preformatted -->
-<pre class="wp-block-preformatted"></pre>
+<pre class="wp-block-preformatted">Intrigued by the fact that you have found something your father made, and with much confidence that you can be useful to the team, you rush excitedly to integrate “Jenny” into the spaceship’s main operating system. For weeks, everything went smoothly, until you ran into a meteor storm. Having little to no data of training, the AI is now malfunctioning. Ulysses freaks out because he can no longer control the spaceship due to the AI overriding his manual commands. Big banging noises terrify your crew members. Everything is shaking. It’s time to act. Do you think you can temporarily shut down “Jenny” until she becomes more sophisticated?</pre>
 <!-- /wp:preformatted -->
 chall file: https://github.com/kisanakkkkk/writeup/blob/main/Cyber%20Apocalypse%20CTF%202022/Jenny%20From%20The%20Block/chall.py
 <p><strong>TL;DR</strong>
@@ -177,10 +177,11 @@ BLOCK_SIZE = 32
 def decrypt_block(enc_block, secret):
     ori_block = b''
     for i in range(BLOCK_SIZE):
-        if enc_block[i] - secret[i] < 0:
-            enc_block[i]+=256
-        enc_block[i] = enc_block[i] - secret[i]
-        ori_block += bytes([enc_block[i]])
+        val = enc_block[i]
+        if val - secret[i] < 0:
+            val = val + 256
+        val = val - secret[i]
+        ori_block += bytes([val])
     return ori_block
 
 def decrypt(msg):
@@ -194,7 +195,7 @@ def decrypt(msg):
         ct += ori_block
     return ct
 
-r = remote('209.97.135.38', 30846)
+r = remote('46.101.30.188',31123)
 r.recvuntil('>')
 r.sendline('cat secret.txt')
 encrypted = r.recvline().strip().decode()
@@ -206,6 +207,6 @@ solve file: https://github.com/kisanakkkkk/writeup/blob/main/Cyber%20Apocalypse%
 <!-- wp:paragraph -->
 <p>output:</p>
 <!-- /wp:paragraph -->
-#b'\nIn case Jenny malfunctions say the following phrase: Melt My Eyez, See Your Future  \nThe AI system will shutdown and you will gain complete control of the spaceship.\n- Danbeer S.A.\nHTB{b451c_b10ck_c1ph3r_15_w34k!!!}\n\x07\x07\x07\x07\x07\x07\x07'
+<img src=https://user-images.githubusercontent.com/70153248/169468340-bee39f64-b71d-4721-a597-15b599558e4d.png>
 
 <p><strong>Flag: HTB{b451c_b10ck_c1ph3r_15_w34k!!!}</strong></p>
